@@ -1,0 +1,105 @@
+/* Global Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background: linear-gradient(145deg, #2e2e3a, #23242d);
+    color: #fff;
+}
+
+/* Calculator Container */
+.calculator-container {
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f9c74f;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Calculator */
+.calculator {
+    background: linear-gradient(145deg, #1e2029, #272a36);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 11px 10px 20px #1a1b23, -10px -10px 20px #31333f;
+    width: 400px; 
+}
+
+/* Input Box */
+#inputBox {
+    width: 80%;
+    background: #2c2f3b;
+    border: none;
+    border-radius: 8px;
+    padding: 40px;
+    font-size: 2rem;
+    text-align: right;
+    color: #fff;
+    box-shadow: inset 4px 4px 8px #16181f, inset -4px -4px 8px #292b37;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+/* Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+/* Button Style */
+.button {
+    background: #1f212b;
+    border: none;
+    border-radius: 50%;
+    height: 70px; /* Ukuran tombol lebih besar */
+    font-size: 1.4rem; /* Ukuran font lebih besar */
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #70799a1a, -4px -4px 8px #292b37;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button Hover */
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 12px #16181f, -6px -6px 12px #292b37;
+}
+
+/* Operator Buttons */
+.operator {
+    background: #f9c74f;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+.operator:hover {
+    background: #f4a261;
+}
+
+/* Equal Button */
+.equalBtn {
+    background: #ff6f61;
+    color: #fff;
+    grid-column: span 4; 
+    height: 65px;
+    border-radius: 8px;
+}
+
+.equalBtn:hover {
+    background: #ff4d4d;
+}
+
+/* Additional Button Styles */
+button:active {
+    transform: translateY(2px);
+    box-shadow: 4px 2px 6px #16181f, -2px -2px 6px #292b37;
+}
